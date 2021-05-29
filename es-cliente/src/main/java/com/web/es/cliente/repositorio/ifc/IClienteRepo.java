@@ -19,7 +19,7 @@ import com.web.es.cliente.repositorio.model.Cliente;
 @Repository
 public interface IClienteRepo extends JpaRepository<Cliente, UUID> {
 
-	@Query(value = "select * from cliente t where t.id = :identificacion limit 1", nativeQuery = true)
+	@Query(value = "select * from cliente t where t.identificacion = :identificacion limit 1", nativeQuery = true)
 	Cliente findOne(String identificacion);
 
 }

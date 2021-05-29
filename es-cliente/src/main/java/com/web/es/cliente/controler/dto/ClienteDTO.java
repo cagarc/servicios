@@ -5,12 +5,15 @@ package com.web.es.cliente.controler.dto;
 
 import java.sql.Date;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @author cgarcia
  *
  */
 public class ClienteDTO {
 
+	@NotNull
 	private String identificacion;
 	private String celular;
 	private String direccion;

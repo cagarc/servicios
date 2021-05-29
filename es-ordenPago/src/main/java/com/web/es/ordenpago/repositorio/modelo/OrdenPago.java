@@ -4,6 +4,7 @@
 package com.web.es.ordenpago.repositorio.modelo;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -40,6 +41,27 @@ public class OrdenPago implements Serializable {
 
 	@Column(name = "codigoCLiente")
 	private String codigoCLiente;
+	
+	@Column(name = "fechaRegistro")
+	private Date fechaRegistro;
+
+	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Date getFechaRegistro() {
+		return fechaRegistro;
+	}
+
+	public void setFechaRegistro(Date fechaRegistro) {
+		this.fechaRegistro = fechaRegistro;
+	}
 
 	public String getNombreArticulo() {
 		return nombreArticulo;

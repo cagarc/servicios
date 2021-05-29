@@ -47,9 +47,9 @@ public class ClienteControlerImp implements IClienteControler {
 	}
 
 	@Override
-	public ResponseEntity<?> ingresarCliente(@RequestBody ClienteDTO body) {
+	public ResponseEntity<?> ingresarCliente(@RequestBody ClienteDTO clienteDTO) {
 		// TODO Auto-generated method stub
-		return servicio.ingresarCliente(body);
+		return servicio.ingresarCliente(clienteDTO);
 	}
 
 }
